@@ -1,0 +1,15 @@
+{
+  "name": "klondaiker.com",
+  "version": "0.0.1",
+  "description": "Personal site",
+  "main": "app.js",
+  "repository": "https://github.com/klondaiker-com/web",
+  "author": "klondaiker",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "geoip-lite": "^1.4.1",
+    "hamljs": "^0.6.2",
+    "pug": "^2.0.4"
+  }
+}
