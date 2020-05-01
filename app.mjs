@@ -1,5 +1,6 @@
 import express from 'express';
-import { i18n } from './i18n.mjs'
+import locale from './locale.mjs'
+import i18n from './i18n.mjs';
 
 var app = express();
 
@@ -7,6 +8,7 @@ app.set('views', './views');
 app.set('view engine', 'pug');
 
 app.use(express.static('public'));
+app.use(locale);
 app.use(i18n);
 
 app.get('/', function (req, res) {
