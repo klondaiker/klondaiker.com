@@ -1,5 +1,5 @@
 import express from 'express';
-import { i18n, currentLocale } from './helpers.mjs'
+import { i18n } from './i18n.mjs'
 
 var app = express();
 
@@ -7,11 +7,10 @@ app.set('views', './views');
 app.set('view engine', 'pug');
 
 app.use(express.static('public'));
+app.use(i18n);
 
 app.get('/', function (req, res) {
-  const locale = currentLocale(req);
-
-  res.render('index', { i18n: i18n(locale) });
+  res.render('index');
 });
 
 app.listen(3000, function () {

@@ -1,12 +1,15 @@
 import geoip from 'geoip-lite';
 import fs from 'fs';
 
-export function i18n(locale) {
+export function i18n(req, res, next){
+  const locale = currentLocale(req);
   const data = fs.readFileSync(`./locales/${locale}.json`);
-  return JSON.parse(data);
+  res.locals.i18n = JSON.parse(data);
+
+  next();
 }
 
-export function currentLocale(req) {
+function currentLocale(req) {
   return localeByIp(req.ip);
 }
 
