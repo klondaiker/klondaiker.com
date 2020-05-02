@@ -2,7 +2,7 @@ import express from 'express';
 import locale from './locale.mjs'
 import i18n from './i18n.mjs';
 
-var app = express();
+const app = express();
 
 app.set('views', './views');
 app.set('view engine', 'pug');
