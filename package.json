@@ -6,6 +6,9 @@
   "repository": "https://github.com/klondaiker-com/web",
   "author": "klondaiker",
   "license": "MIT",
+  "scripts": {
+    "start": "node app.mjs"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "geoip-lite": "^1.4.1",
