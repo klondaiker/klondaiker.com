@@ -1,7 +1,14 @@
 import geoip from 'geoip-lite';
 
 export default function locale(req, res, next) {
-  res.locals.locale = localeByIp(req.ip);
+  const lang = req.acceptsLanguages('ru','en');
+
+  if(lang) {
+    res.locals.locale = lang;
+  } else {
+    res.locals.locale = localeByIp(req.ip);
+  }
+
   next();
 }
 

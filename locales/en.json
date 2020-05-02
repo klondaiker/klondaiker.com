@@ -1,3 +1,9 @@
 {
-  "name": "Alexandr Zavgorodnev"
+  "name": "Alexandr Zavgorodnev",
+  "now": "now",
+  "contacts": "Contacts",
+  "github": "Github",
+  "habr": "Habr",
+  "stream": "Stream",
+  "social": "Social"
 }
