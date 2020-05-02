@@ -4,6 +4,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: klondaker/web
+    container_name: klondaker_web
     ports:
       - "3000:3000"
