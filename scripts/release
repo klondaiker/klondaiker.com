@@ -1,5 +1,5 @@
 ssh root@klondaiker.com << EOF
-  cd /home/wwwklondaiker/web
+  cd /home/wwwklondaiker/klondaiker.com
   git pull
   docker-compose up -d --no-deps --build web
 EOF
