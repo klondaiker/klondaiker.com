@@ -10,7 +10,7 @@
     "start": "node app.mjs"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "geoip-lite": "^1.4.1",
     "hamljs": "^0.6.2",
     "pug": "^2.0.4"
